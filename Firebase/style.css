@@ -1,0 +1,90 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+    color: white;
+}
+.container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+}
+.container .background{
+    position: relative;
+}
+.shade{
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+}
+.background > :nth-child(1){
+    background: linear-gradient(#1845ad, #23a2f6);
+    position: absolute;
+    top: -250px;
+    left: -40px;
+}
+.background > :nth-child(2){
+    background: linear-gradient(#ff512f, #f09819);
+    position: absolute;
+    bottom: -250px;
+    right: -370px;
+}
+h3{
+    font-size: 25px;
+    text-align: center;
+}
+form{
+    width: 600px;
+    height: 600px;
+    background-color: rgba(255, 255, 255, 0.13);
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    backdrop-filter: blur(10px);
+    border-radius: 10px;
+}
+.inputgroup{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 40px;
+}
+ input{
+    background-color: rgba(255, 255, 255, 0.07);
+    padding: 10px;
+    width: 100%;
+    margin-top: 10px;
+    border: none;
+    font-size: 14px;
+    color: rgba(218, 218, 218);
+}
+
+label{
+    font-size: 18px;
+}
+
+button{
+    padding: 15px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+    transform: all 0.9s ease-in-out;
+}
+button:active{
+    transform: scale(0.9);
+}
+p{
+    font-size: 15px;
+    display: flex;
+   justify-content: space-between;
+}
+a{
+    text-decoration: none;
+    color: #f09819;
+}
